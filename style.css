@@ -1,0 +1,60 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.section-title {
+    font-size: 1.5em;
+    margin: 40px 0 20px;
+}
+
+.result-block {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 40px;
+    align-items: flex-start;
+}
+
+.image-container {
+    width: 400px;
+}
+
+.image-container img {
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+.canvas-container {
+    flex-grow: 1;
+}
+
+#user-upload-area {
+    border: 2px dashed #aaa;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    width: 640px;
+    border-radius: 10px;
+}
+
+#uploadInput {
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+canvas {
+    max-width: 100%;
+}
