@@ -34,6 +34,47 @@
     </div>
 </div>
 
+<hr>
+<section id="diskussion">
+    <h2>Diskussion</h2>
+    <p>
+        Die Klassifikation funktionierte gut bei klaren, hochauflösenden Bildern mit zentralem Objekt – z. B. ein vollständiger Hund oder ein Apfel.
+        Probleme traten auf bei verpixelten Bildern, invertierten Farben oder bei Bildern mit nur einem Ausschnitt (z. B. nur die Pfote eines Hundes).
+        Das vortrainierte MobileNet-Modell zeigt in solchen Fällen Labels an, die zwar teilweise passen, aber nicht das tatsächliche Objekt genau treffen.
+        Besonders bei künstlich veränderten Bildern (Filter, schlechte Beleuchtung) war die Trefferquote deutlich schlechter.
+        Daraus lernen wir, dass Machine-Learning-Modelle wie MobileNet stark von Trainingsdaten abhängen – wenn das Eingabebild zu stark abweicht, sinkt die Genauigkeit.
+        Für Echtwelt-Anwendungen wären gezieltes Finetuning oder zusätzliche Trainingsdaten hilfreich.
+        Überraschend war, dass auch ungewöhnliche Winkel manchmal gut erkannt wurden – sofern die Bildqualität hoch war.
+        Insgesamt funktioniert das Modell gut als Einstieg in maschinelles Lernen, hat aber erkennbare Grenzen.
+        Die Drag-&-Drop-Funktion erhöht die Nutzbarkeit deutlich.
+        Durch das Diagramm wird die Unsicherheit der Vorhersage gut sichtbar.
+    </p>
+</section>
+
+<hr>
+<section id="dokumentation">
+    <h2>Dokumentation</h2>
+    <h3>1) Technisch</h3>
+    <ul>
+        <li><strong>p5.js</strong> – für Canvas-Management, Bildanzeige und Dateiupload</li>
+        <li><strong>ml5.js</strong> – für die Bildklassifikation mit dem vortrainierten MobileNet-Modell</li>
+        <li><strong>Chart.js</strong> – zur Visualisierung der Ergebnisse als Tortendiagramm</li>
+        <li><strong>HTML/CSS/JavaScript</strong> – Grundstruktur, Styling und Interaktivität der Web-App</li>
+    </ul>
+    <p>
+        Besondere technische Aspekte waren die Integration von Drag & Drop, sowie die Live-Vorhersage mit sofortiger Diagrammanpassung.
+        Außerdem wurde eine Fehlerbehandlung eingebaut, um ungültige Dateien direkt zu erkennen.
+    </p>
+
+    <h3>2) Fachlich</h3>
+    <p>
+        Die App nutzt das MobileNet-Modell von ml5.js, um hochgeladene Bilder zu klassifizieren.
+        Die Logik besteht darin, nach dem Bild-Upload das Modell mit dem Bild zu füttern, das Ergebnis darzustellen und die Top-Labels im Diagramm zu visualisieren.
+        Die Resultate zeigen Stärken bei typischen Objekten, Schwächen bei verrauschten oder verfremdeten Bildern.
+        Quellen waren das ml5-Tutorial, MDN für Web-APIs und das GitHub-Repo von Chart.js.
+        Die Anwendung ist vollständig client-seitig und benötigt keine Server- oder Backend-Komponenten.
+    </p>
+</section>
 
 </body>
 </html>
