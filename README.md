@@ -18,4 +18,4 @@ Dies ist eine einfache Web-App zur Bildklassifikation mit MobileNet (ml5.js) und
 - GitHub Pages Deployment
 
 ## Live-Demo
-👉 [Hier klicken](https://dein-name.github.io/ml5-bildklassifikation/)
+👉 [Hier klicken](https://github.com/QmrMalla/ml5-image-classifier/tree/master)
